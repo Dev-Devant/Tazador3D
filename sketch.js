@@ -124,7 +124,7 @@ function draw() {
     text("Valor paquete: $" + pieza * cantidad,0.45*width,0.83 * height)
     fill(0,120,0)
     if (buy.show(0.45*width,0.90 * height,0.6 * width,0.05 * height)){
-       shop.push( new item("TAM: " + sized[selectedA].txt + " Det: " + detail[selectedB].txt + " Cant: " + cantidad,pieza))
+       shop.push( new item("TAM: " + sized[selectedA].txt + " Det: " + detail[selectedB].txt + " Cant: " + cantidad,pieza * cantidad))
       pieza = 0
        selectedA = 0
       selectedB = 0
