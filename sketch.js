@@ -143,8 +143,7 @@ function draw() {
       var space = absoluteY/shop.length
       var tot  = 0
       if (shop.length <10){
-          space = 0.05 * height
-          
+          space = 0.05 * height          
           }
       for (var k = 0; k< shop.length;k++){
         fill(120)
@@ -152,34 +151,17 @@ function draw() {
         shop[k].show(0.4 * width,height/4 + (k*space), 0.8 * width,space)
         fill(120,0,0)
         if ( erace.show(0.9 * width,height/4 + (k*space), 0.1 * width,space)){
-            shop.splice(k,1)
-            
-            }
-        
+            shop.splice(k,1)            
+            }        
       }
       fill(255)
       textSize(width * 0.05)
-        
-      
-      
-      
-      text("Costo total: $" + tot,width/2,0.95 * height)
-      
-      
-      
-    }
-      
-    
-    
-    
-    
+     text("Costo total: $" + tot,width/2,0.95 * height)     }
+     
   }
-  
-  
   if (!mouseIsPressed){
       flag = false
       }
-  
 }
 
 function windowResized() {
